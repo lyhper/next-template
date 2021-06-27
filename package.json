@@ -1,0 +1,45 @@
+{
+  "name": "next-template",
+  "version": "0.1.0",
+  "private": true,
+  "author": "lyhper",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "mock": "mock -p 3001",
+    "eslint": "eslint pages components --ext .ts,.tsx,.js,.jsx"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged -v"
+    }
+  },
+  "lint-staged": {
+    "{pages,components}/**/*.{js,jsx,ts,tsx}": [
+      "eslint --ext .ts,.tsx,.js,.jsx"
+    ]
+  },
+  "dependencies": {
+    "next": "^10.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "recoil": "^0.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "@zeit/next-less": "^1.0.1",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
+    "less": "^4.1.1",
+    "lint-staged": "^11.0.0",
+    "local-mock-server": "^1.0.3",
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.4",
+    "webpack": "^4.44.2"
+  }
+}
