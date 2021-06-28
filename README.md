@@ -1,5 +1,13 @@
 # next-template
 
-This is a starter template for nextjs. support h5.
+This is a starter template for nextjs.
 
-typescript + less + recoil.
+## features
+
+- next
+- typescript
+- less
+- recoil
+- mock
+- eslint
+- h5 compatible
