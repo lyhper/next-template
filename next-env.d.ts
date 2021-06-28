@@ -7,6 +7,7 @@ declare module '*.less' {
 }
 
 declare interface anyObject {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [propName: string]: any;
 }
 
