@@ -2,12 +2,18 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from './layout.module.less';
 import utilStyles from '../styles/utils.module.less';
+import React from 'react';
 import Link from 'next/link';
 
 const name = 'next template';
 export const siteTitle = 'next template';
 
-export default function Layout({ children, home }) {
+interface LayoutInterface {
+  children: ReactChildren;
+  home: boolean;
+}
+
+export default function Layout({ children, home }: LayoutInterface): JSX.Element {
   return (
     <div className={styles.container}>
       <Head>
