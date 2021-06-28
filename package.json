@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "mock": "mock -p 3001",
-    "eslint": "eslint src --ext .ts,.tsx,.js,.jsx"
+    "eslint": "eslint src --ext .ts,.tsx,.js,.jsx",
+    "eslint-fix": "eslint src --fix --ext .ts,.tsx,.js,.jsx"
   },
   "husky": {
     "hooks": {
