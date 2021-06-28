@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from './layout.module.less';
-import utilStyles from '../styles/utils.module.less';
+import styles from './layout.less';
+import utilStyles from '../styles/utils.less';
 import React from 'react';
 import Link from 'next/link';
 

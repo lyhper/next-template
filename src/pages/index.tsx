@@ -3,7 +3,7 @@ import { GetServerSideProps, GetServerSidePropsContext } from 'next'
 import Layout, { siteTitle } from '../components/layout';
 import { useRecoilState } from 'recoil';
 import { globalStateAtom } from '../states/index';
-import utilStyles from '../styles/utils.module.less';
+import utilStyles from '../styles/utils.less';
 
 interface HomeInterface {
   text: string;
